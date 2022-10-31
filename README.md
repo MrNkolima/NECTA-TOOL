@@ -21,7 +21,11 @@ You can install 'NECTA-TOOL' in your system.
  * 'sh install'
 
 Or install in one line
+<details>
+
 ``` git clone https://github/MrNkolima/NECTA-TOOL.git && cd NECTA-TOOL && chmod +x install && sh install ```
+
+</details>
 
 ### How to use?
 
