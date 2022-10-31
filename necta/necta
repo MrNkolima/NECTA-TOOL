@@ -1,0 +1,17 @@
+#This file will be placed at the bin directory
+#It execute the necta-tool in the share directory
+if [ -d /data/data/com.termux/files/usr/share/NECTA ];then
+  cd /data/data/com.termux/files/usr/share/NECTA
+  exec python3 necta-tool.py $@
+else
+  cd /usr/share/NECTA
+  exec python3 necta-tool.py $@
+fi
+
+#The if statement scan if the directories,
+#Which are present to conclude if the system,
+#Is desktop or not. So as to activate the necta-tool,
+#In the share directory.
+
+#Tue, Oct 25 2022
+#22:19 EAT
