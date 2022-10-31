@@ -109,7 +109,7 @@ elif sys.argv[1]=="update":
  if os.path.exists(home+"NECTA-TOOL"):
     print(__BOLDCYAN__+"  Updated successfully!! \n")
     sys.exit()
-  else:
+ else:
     print(__YELLOW__+"       [+]"+__RESET__+" Can't update "+__TOOL__+".")
     print(__YELLOW__+"       [+]"+__RESET__+" Please check your internet connection.")
     print(__YELLOW__+"       [+]"+__RESET__+" Remember UPDATES comes with new features!!.")
