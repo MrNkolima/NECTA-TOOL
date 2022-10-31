@@ -102,11 +102,12 @@ elif sys.argv[1]=="--help" or sys.argv[1]=="help":
 elif sys.argv[1]=="update":
  update ()
  if system=="ubuntu":
-   os.system("cd "+home+" && git clone https://github.com/MrNkolima/NECTA-TOOL.git && cd NECTA-TOOL && chmod +x install && sh install")
+   os.system("cd "+home+" && git clone https://github.com/MrNkolima/NECTA-TOOL.git ")
  else:
-   os.system("cd "+home+" && git clone https://github.com/MrNkolima/NECTA-TOOL.git && cd NECTA-TOOL && chmod +x install && sh install")
+   os.system("cd "+home+" && git clone https://github.com/MrNkolima/NECTA-TOOL.git ")
  
  if os.path.exists(home+"NECTA-TOOL"):
+    os.system("cd NECTA-TOOL && chmod +x install && sh install")
     print(__BOLDCYAN__+"  Updated successfully!! \n")
     sys.exit()
  else:
