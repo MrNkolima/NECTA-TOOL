@@ -1,0 +1,40 @@
+#!/bin/sh
+# Tool: NECTA-TOOL
+# Version: 1.0.0.
+
+#The main() function checks the environment of the system.
+main() {
+       #If it's desktop environment check if it's Superuser or normal user.
+       if [ -e  /usr/lib/sudo ];then
+        if [ ! -e /usr/bin/python3 ];then
+         apt-get update
+         apt-get install python -y
+         sudo apt-get install python3 -y
+        fi
+       else
+          if [ -d /usr/bin ];then
+            if [ ! -e /usr/bin/python3 ];then
+              apt-get update
+              apt-get install python -y
+              apt-get install python3 -y
+            fi
+           fi 
+       fi
+      
+      #Detect if it's Termux Enviroment.
+      if [ ! -d /usr/bin ];then
+        if [ ! -e /data/data/com.termux/files/usr/bin/python3 ];then
+          pkg update
+          pkg install python -y
+          pkg install python3 -y
+        fi
+       fi
+       
+       #opening the setup.aex which containing installment codes.
+       python3 .setup.aex
+       exit
+}
+main
+
+#Tue, Oct 25 2022.
+#22:00 EAT
