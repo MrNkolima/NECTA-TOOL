@@ -105,7 +105,7 @@ class necta(object):
       # Removing the files after installation,
       # From the home directory so as,
       # To save space.
-      os.system("cd "+home+" && sudo rm -rf NECTA-TOOL && "+pkg+" install bs4"+" && "+pkg+" install tabulate"+" && pip install nectaapi")
+      os.system("cd .. && sudo rm -rf NECTA-TOOL && "+pkg+" install bs4"+" && "+pkg+" install tabulate"+" && pip install nectaapi")
       
       #A
       #N
@@ -138,7 +138,7 @@ class necta(object):
       # Removing the NECTA-TOOL files,
       # So as to save storage,
       # Of the system.
-      os.system("cd "+home+" && sudo rm -rf NECTA-TOOL && "+pkg+" install bs4"+" && "+pkg+" install tabulate"+" && pip install nectaapi")
+      os.system("cd .. && rm -rf NECTA-TOOL && "+pkg+" install bs4"+" && "+pkg+" install tabulate"+" && pip install nectaapi")
       
             
     #A
