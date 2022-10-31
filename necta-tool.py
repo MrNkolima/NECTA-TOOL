@@ -99,23 +99,23 @@ elif sys.argv[1]=="version" or sys.argv[1]=="--version":
 elif sys.argv[1]=="--help" or sys.argv[1]=="help":
   os.system("python3 necta/help.py")
   
-  
 elif sys.argv[1]=="update":
-  if system=="ubuntu":
-    os.system("cd "+home+" && sudo git clone https://github.com/MrNkolima/NECTA-TOOL.git")
-  else:
-    os.system("cd "+home+" && git clone https://github.com/MrNkolima/NECTA-TOOL.git")
-  if os.path.exists(home+"NECTA-TOOL"):
-    os.system("cd "+home+"NECTA-TOOL && sh install")
-    os.system("clear")
-    update()
+ update ()
+ if system=="ubuntu":
+   os.system("cd "+home+" && git clone https://github.com/MrNkolima/NECTA-TOOL.git && cd NECTA-TOOL && chmod +x install && sh install")
+ else:
+   os.system("cd "+home+" && git clone https://github.com/MrNkolima/NECTA-TOOL.git && cd NECTA-TOOL && chmod +x install && sh install")
+ 
+ if os.path.exists(home+"NECTA-TOOL"):
+    print(__BOLDCYAN__+"  Updated successfully!! \n")
     sys.exit()
   else:
     print(__YELLOW__+"       [+]"+__RESET__+" Can't update "+__TOOL__+".")
     print(__YELLOW__+"       [+]"+__RESET__+" Please check your internet connection.")
     print(__YELLOW__+"       [+]"+__RESET__+" Remember UPDATES comes with new features!!.")
     print("\n")
-    sys.exit()
+    sys.exit()  
+
   
 elif sys.argv[1]=="uninstall":
  uninstall ()
