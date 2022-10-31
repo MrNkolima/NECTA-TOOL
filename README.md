@@ -40,7 +40,7 @@ There are two ways:
     For O-level use 'school type' - **csee**
     For A-level use 'school type' - **acsee**
 
-Other commands:
+#### Other commands:
 
 * **necta help** -To see how to use NECTA-TOOL.
 <p align="center">
