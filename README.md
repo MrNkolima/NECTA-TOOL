@@ -36,7 +36,7 @@ There are two ways:
   <img src="./img/results.png" alt="necta results" >
 </p>
 
-* ```necta (school number) (student number) (year) (school type)```
+* **necta {school number} {student number} {year} {school type}**
     For O-level use 'school type' - **csee**
     For A-level use 'school type' - **acsee**
 
