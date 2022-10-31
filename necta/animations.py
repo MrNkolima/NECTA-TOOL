@@ -135,22 +135,16 @@ def uninstall():
      sys.exit()
      
 
-def update():
-  print(__BLUE__+"\n\n   updating. "+__RESET__)
-  sleep(3)
-  os.system("clear")
-  print(__BLUE__+"\n\n   updating.. "+__RESET__)
-  sleep(2)
-  os.system("clear")
-  print(__BLUE__+"\n\n   updating... "+__RESET__)
-  sleep(4)
-  os.system("clear")
-  print(__BLUE__+"\n\n   updating...... "+__RESET__)
-  sleep(6)
-  os.system("clear")
-  print(__BOLDBLUE__+"\n\n   NECTA-TOOL UPDATED SUCCESSFULLY!! "+__RESET__)
-  print(__BLUE__+"   Type: "+__BOLDCYAN__+"necta --version"+__RESET__+" To see NECTA-TOOL version")
-  print(__BOLDCYAN__+"   necta --help "+__RESET__+" -for more informations")
+def update ():
+   askv=input(f"\n\n  Do you really want to update NECTA-TOOL? {__BOLDYELLOW__}[y or n]\n\n              >>> ")
+   if askv == "n" or askv == "N":
+     exit()
+   elif askv== "y" or askv == "Y":
+     pass
+   else:
+     print(__BOLDRED__+"\n        Error:: Invalid chose!!\n"+__RESET__)
+     sleep(3)
+     sys.exit()    
   
   
 
