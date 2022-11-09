@@ -15,7 +15,7 @@ Features
 
 You can install 'NECTA-TOOL' in your system.
 
- * 'git clone https://githb.com/MrNkolima/NECTA-TOOL.git'
+ * 'git clone https://github.com/MrNkolima/NECTA-TOOL.git'
  * 'cd NECTA-TOOL'
  * 'chmod +x install'
  * 'sh install'
