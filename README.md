@@ -23,7 +23,7 @@ You can install 'NECTA-TOOL' in your system.
 Or install in one line
 <details>
 
-``` git clone https://github/MrNkolima/NECTA-TOOL.git && cd NECTA-TOOL && chmod +x install && sh install ```
+``` git clone https://github.com/MrNkolima/NECTA-TOOL.git && cd NECTA-TOOL && chmod +x install && sh install ```
 
 </details>
 
