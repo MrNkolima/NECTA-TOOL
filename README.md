@@ -16,6 +16,10 @@ Features
 You can install 'NECTA-TOOL' in your system.
 
  * 'git clone https://github.com/MrNkolima/NECTA-TOOL.git'
+ * 'pip install bs4'
+ * 'pip install nectaapi'
+ * 'pip install tabulate'
+ * 'pip install requests'
  * 'cd NECTA-TOOL'
  * 'chmod +x install'
  * 'sh install'
@@ -23,7 +27,7 @@ You can install 'NECTA-TOOL' in your system.
 Or install in one line
 <details>
 
-``` git clone https://github.com/MrNkolima/NECTA-TOOL.git && cd NECTA-TOOL && chmod +x install && sh install ```
+``` git clone https://github.com/MrNkolima/NECTA-TOOL.git && pip install nectaapi && pip install tabulate && pip install requests &&pip install bs4 && cd NECTA-TOOL && chmod +x install && sh install ```
 
 </details>
 
